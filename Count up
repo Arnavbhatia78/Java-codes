@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+      // you may wish to write some code in this main method
+      // to test your method.
+      Scanner scnr = new Scanner(System.in);
+      int x = scnr.nextInt();
+      countUp(x);
+   }
+   
+
+   public static void countUp(int x){
+      for ( int i=1;i<=x;i++){
+         System.out.print(i+",");}}
+}
