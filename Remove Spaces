@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class NoSpaces {
+   public static void main(String[] args) {
+      
+      Scanner scnr = new Scanner (System.in);
+      String usersInput = scnr.next();
+      removeSpaces(usersInput);
+   }
+   
+   public static String removeSpaces(String input ){
+      String withoutspace="" ;
+      int a= input.length();
+      for (int i =0;i<a;i++){
+         if (input.charAt(i)!=' '){
+        
+            withoutspace=withoutspace+input.charAt(i);}
+            else { 
+               continue;}}
+            
+            return withoutspace;}
+            
+   
+}
