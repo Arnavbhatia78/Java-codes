@@ -1,0 +1,40 @@
+ import java.util.Scanner;
+public class Main {
+   public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+      String usersInput = scnr.next();
+      isPalindrome(usersInput);
+   }
+   public static boolean isPalindrome( String forward )
+   {
+     String forwardWithoutSpace = "" ;
+      String reverse = "" ;
+     int lengthOfForward = forward.length();
+     boolean trueorfalse  ;
+     for ( int i=0 ; i<lengthOfForward ; i++)
+     {
+     if ( forward.charAt(i)!=' ')
+     {
+     forwardWithoutSpace = forwardWithoutSpace + forward.charAt(i);
+     }
+     else
+     {
+        continue;
+     }
+     }
+     int lengthOfForwardWithoutSpace = forwardWithoutSpace.length() - 1;
+  for ( int j = lengthOfForwardWithoutSpace ; j>=0 ; j--)
+  {
+     reverse = reverse + forwardWithoutSpace.charAt(j) ; 
+     }
+     if ( forwardWithoutSpace.equals(reverse) )
+     {
+       trueorfalse = true; 
+       }
+       else
+       {
+          trueorfalse = false;
+          }
+          return trueorfalse;
+          }
+}
